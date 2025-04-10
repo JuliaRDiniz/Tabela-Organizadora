@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Organizadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#info">Início</a></li>
+          <li><a href="#tables-container">Tabela</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="info" id="info">
+        <div class="text">
+          <h1>Organize Sua Rotina e Gerencie Sua Semana</h1>
+
+          <p>
+            Manter uma rotina organizada é essencial para a produtividade e a
+            realização das tarefas diárias. Ser produtivo não significa apenas
+            ter um dia cheio de afazeres, mas sim organizar as atividades de
+            forma estratégica, sabendo exatamente o que precisa ser feito.
+            Estudo, trabalho, tarefas domésticas e, claro, momentos de lazer e
+            descanso fazem parte de uma rotina equilibrada e realista. É
+            importante evitar comparações com rotinas irreais que vemos na
+            internet e focar no que realmente importa para cada um.
+          </p>
+
+          <p>
+            Para ajudar nessa organização, a tabela abaixo permite distribuir
+            suas tarefas de maneira clara e visual, separando-as por categorias.
+            Assim, você pode equilibrar seus compromissos sem sobrecarga,
+            tornando seu dia mais produtivo e bem planejado.
+          </p>
+        </div>
+
+        <div class="circulo">
+          <h2>Organize:</h2>
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <input type="radio" name="radio-btn" id="radio5" />
+
+              <div class="slide first">
+                <div class="div-image">
+                  <p>Estudo</p>
+                  <img src="images/estudo.jpg" alt="imagem mesa de estudos" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="div-image">
+                  <p>Lazer</p>
+                  <img src="images/lazer.jpg" alt="imagem mulher na rede" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="div-image">
+                  <p>Trabalho</p>
+                  <img
+                    src="images/trabalho.jpg"
+                    alt="imagem mesa de trabalho"
+                  />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="div-image">
+                  <p>Atividade Física</p>
+                  <img src="images/academia.jpg" alt="imagem da academia" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="div-image">
+                  <p>Afazeres Domésticos</p>
+                  <img
+                    src="images/limpeza.jpg"
+                    alt="imagem profuto de limpeza"
+                  />
+                </div>
+              </div>
+
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+              </div>
+
+              <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section name="Tabela" id="tables-container">
+        <h2>Tabela Organizadora</h2>
+
+        <p>
+          Mês
+          <input type="text" id="month" />
+          Semana
+          <input type="number" id="week" min="1" max="5" />
+        </p>
+        <div class="div-table">
+          <table id="todo-table">
+            <thead>
+              <tr>
+                <th>Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  class="category"
+                  style="
+                    background-color: #b1e7e2;
+                    /* background-image: linear-gradient(
+                      50deg,
+                      #1a70b6,
+                      #1ef0ffd9,
+                      #87f7ffd9
+                    ); */
+                  "
+                >
+                  Estudo
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-1-1" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-1-2" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea name="" id="celula-1-3" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea name="" id="celula-1-4" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea name="" id="celula-1-5" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea name="" id="celula-1-6" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-1-7" rows="1"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="category"
+                  style="
+                    background-color: #fa6363;
+                    /* background-image: linear-gradient(
+                      50deg,
+                      #910606,
+                      #ff0000,
+                      #fa6363
+                    ); */
+                  "
+                >
+                  Trabalho
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-1" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-2" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-3" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-4" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-5" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-6" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-2-7" rows="1"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="category"
+                  style="
+                    background-color: #ffca7b;
+                    /* background-image: linear-gradient(
+                      50deg,
+                      #a88f00,
+                      #dddd01,
+                      #fdfa3bd1
+                    ); */
+                  "
+                >
+                  Lazer
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-1" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-2" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-3" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-4" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-5" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-6" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-3-7" rows="1"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="category"
+                  style="
+                    background-color: #d1a2dd;
+                    /* background-image: linear-gradient(
+                      20deg,
+                      #4f017c,
+                      #a304ff,
+                      #e69bf9
+                    ); */
+                  "
+                >
+                  Atividade Física
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-1" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-2" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-3" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-4" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-5" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-6" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-4-7" rows="1"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="category"
+                  style="
+                    background-color: #92f780;
+                    /* background-image: linear-gradient(
+                      50deg,
+                      #136f00e6,
+                      #44ff24,
+                      #67ff4c
+                    ); */
+                  "
+                >
+                  Afazeres Domésticos
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-1" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-2" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-3" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-4" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-5" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-6" rows="1"></textarea>
+                  </div>
+                </td>
+                <td>
+                  <div class="div-tarefa">
+                    <span class="bolinha"></span>
+                    <textarea id="celula-5-7" rows="1"></textarea>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="buttons">
+          <button id="clearTable">Apagar Tabela</button>
+          <button id="saveTable">Salvar Tabela</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="rodape">
+        <div class="encerramento">
+          <p>
+            Com uma rotina organizada, você ganha mais controle sobre seu tempo
+            e equilibra melhor suas responsabilidades e momentos de descanso.
+            Pequenas mudanças diárias podem transformar sua produtividade no
+            longo prazo. Use esta ferramenta a seu favor e planeje sua semana
+            com mais clareza e eficiência!
+          </p>
+
+          <p>
+            Agora é sua vez! Preencha sua tabela e veja como a organização pode
+            tornar seus dias mais leves e produtivos
+          </p>
+        </div>
+        <hr />
+        <p class="creditos">Desenvolvido por Julia Diniz</p>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
