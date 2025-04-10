@@ -1,0 +1,1 @@
+Este é um site interativo que desenvolvi, com uma tabela organizadora para ajudar os usuários a planejarem suas semanas de forma prática e eficiente. O site conta com salvamento no localStorage, edição dinâmica dos campos, interface responsiva e botões para salvar e excluir a tabela.
